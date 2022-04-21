@@ -109,10 +109,13 @@ let gender;
         console.log(infoPazients);
         person.SNILS4=infoPazients
 console.log(person) */
-let SNILS;
-SNILS=prompt("Write SNILS", SNILS);
-infoname=person[SNILS];
-console.log(infoname)
+let SNILS
+var FirstFunction = function (person,SNILS) {
+    SNILS = prompt("Wtite pazient's SNILS", SNILS);
+    infoname = person[SNILS]
+    console.log(infoname)
+    alert("Info about pazient", + infoname);
+}
 alert("Patient Info" +infoname)
 /* let phase 
 phase=prompt("Write smth", phase)
