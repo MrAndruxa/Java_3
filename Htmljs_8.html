@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="Ru-Ru">
 
 <head>
@@ -54,10 +54,9 @@
         <hr>
     </footer>
 
-<body>
     <script>
         let infoPazients=["Ivanov",  "Ivan", "Ivanovitch", 15, "May", 1974, "M"];
-        console.log(infoPazients)
+       /* console.log(infoPazients) */
         /*
         let lastname;
         lastname=prompt("Write a pazient name", lastname);
@@ -111,29 +110,34 @@ let gender;
 console.log(person) */
 let SNILS
 var FirstFunction = function (person,SNILS) {
-    SNILS = prompt("Wtite pazient's SNILS", SNILS);
+    SNILS = prompt("Wtite pazient's SNILS", SNILS)
     infoname = person[SNILS]
-    console.log(infoname)
-    alert("Info about pazient", + infoname);
+   // console.log(infoname)
+    alert("Info about pazient", + infoname)
+    StatusVacc = person[SNILS][7];
+    console.log(StatusVacc)
 }
-alert("Patient Info" +infoname)
+FirstFunction(person, SNILS)
 /* let phase 
 phase=prompt("Write smth", phase)
 infoname.push(phase)
 console.log(infoname)
 person[SNILS]=infoname
-console.log(person); */
+console.log(person); 
+*/
 // Information about vaccination status
-StatusVacc = person[SNILS][7]
-console.log(StatusVacc)
-// Changings
-if (StatusVacc === "Yes") {
-    alert("Vacccination dennied" + infoname);
-} else if (StatusVacc === "No") {
+var SecondFunction = function (StatusVacc, infoname) {
+    // Changings
+    if (StatusVacc === "Yes") {
+    alert("Vacccination denied" + infoname);
+    } else if (StatusVacc === "No") {
     alert("Vaccination allowed" + infoname);
-} else if (StatusVacc === "Else") {
+    } else if (StatusVacc === "Else") {
     alert("Vaccination denied" + infoname)
-}   
+    }   
+}
+ForSecond = FirstFunction(person, SNILS)
+SecondFunction(StatusVacc, infoname)
 //ENding work with this windows
 var prolongation = confirm("Continue cheking vaccination status?")
 if ( prolongation) {
