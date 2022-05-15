@@ -6,13 +6,13 @@ var person = {
 // console.log(person)
 let SNILS
 var FirstFunction = function (person,SNILS) {
-SNILS = prompt("Wtite pazient's SNILS", SNILS)
-infoname = person[SNILS]
-// console.log(infoname)
-alert("Info about pazient", + infoname)
-StatusVacc = person[SNILS][7];
-console.log(StatusVacc)
-}
+     SNILS = prompt("Write pazient's SNILS", SNILS)
+     infoname = person[SNILS]
+     // console.log(infoname)
+     alert("Info about pazient" +infoname)
+     StatusVacc = person[SNILS][7];
+     console.log(StatusVacc)
+     }
 FirstFunction(person, SNILS)
 // Information about vaccination status
 var SecondFunction = function (StatusVacc, infoname) {
