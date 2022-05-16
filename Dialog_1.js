@@ -13,7 +13,7 @@ var FirstFunction = function (person,SNILS) {
      StatusVacc = person[SNILS][7];
      console.log(StatusVacc)
      }
-FirstFunction(person, SNILS)
+// FirstFunction(person, SNILS)
 // Information about vaccination status
 var SecondFunction = function (StatusVacc, infoname) {
 // Changings
